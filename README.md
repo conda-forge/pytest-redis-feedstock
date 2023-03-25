@@ -1,11 +1,11 @@
-About pytest-redis
-==================
+About pytest-redis-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-redis-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ClearcodeHQ/pytest-redis
 
 Package license: LGPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-redis-feedstock/blob/main/LICENSE.txt)
 
 Summary: Redis fixtures and fixture factories for Pytest.
 
