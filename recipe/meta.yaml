@@ -16,14 +16,16 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
+    - setuptools >=61.0.0
+    - wheel
     - pip
   run:
-    - python >=3.7
-    - pytest >=6.2.0
+    - python >=3.8
+    - pytest >=6.2
     - port-for >=0.6.0
     - mirakuru
-    - redis-py
+    - redis-py >=3
 
 test:
   imports:
