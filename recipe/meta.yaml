@@ -1,5 +1,5 @@
 {% set name = "pytest-redis" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytest-redis-{{ version }}.tar.gz
-  sha256: 988cfa96f9473c5afe662bcc3f3c31ddeef961832d0ca75c919f443071389120
+  sha256: 0b04e7b7b11df801f848ffb7bb0311d54b475c3a58c6a2dfaa432abf5345a0bb
 
 build:
   noarch: python
@@ -39,9 +39,7 @@ about:
   home: https://github.com/ClearcodeHQ/pytest-redis
   summary: Redis fixtures and fixture factories for Pytest.
   license: LGPL-3.0-or-later
-  license_file:
-    - COPYING.lesser
-    - COPYING
+  license_file: COPYING.lesser
 
 extra:
   recipe-maintainers:
