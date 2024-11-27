@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytest_redis-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pytest_redis-{{ version }}.tar.gz
   sha256: 41c98c01def18af533805c0862bc098dede03b8228a4e17761daef1beb701fdf
 
 build:
