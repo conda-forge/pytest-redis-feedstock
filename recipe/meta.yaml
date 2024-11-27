@@ -1,13 +1,13 @@
 {% set name = "pytest-redis" %}
-{% set version = "3.1.1" %}
+{% set version = "3.1.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytest_redis-{{ version }}.tar.gz
-  sha256: 9697147f21c0ae74d63e2c92fb37419257a60c3e10766526142dd7981c49cbe4
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pytest_redis-{{ version }}.tar.gz
+  sha256: 41c98c01def18af533805c0862bc098dede03b8228a4e17761daef1beb701fdf
 
 build:
   noarch: python
