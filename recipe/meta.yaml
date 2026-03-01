@@ -1,31 +1,31 @@
-{% set name = "pytest-redis" %}
-{% set version = "3.1.3" %}
+{% set python_min = "3.10" %}
+{% set version = "4.0.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: pytest-redis
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pytest_redis-{{ version }}.tar.gz
-  sha256: 8bb76be4a749f1907c8b4f04213df40b679949cc2ffe39657e222ccb912aecd9
+  url: https://pypi.org/packages/source/p/pytest-redis/pytest_redis-{{ version }}.tar.gz
+  sha256: f577be24f0d98fd4c3a81c2fa9fe59977cf394eca5b675758e369f430ffb8414
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python {{ python_min }}.*
     - setuptools >=61.0.0
     - wheel
     - pip
   run:
     - python >={{ python_min }}
-    - pytest >=6.2
-    - port-for >=0.6.0
-    - mirakuru
-    - redis-py >=3
+    - pytest >=8.4.0
+    - port-for >=0.7.3
+    - mirakuru >=2.6.0
+    - redis-py >=4.1.0
 
 test:
   imports:
@@ -34,16 +34,16 @@ test:
     - pip check
   requires:
     - pip
-    - python {{ python_min }}
+    - python {{ python_min }}.*
 
 about:
-  home: https://github.com/ClearcodeHQ/pytest-redis
+  home: https://pypi.org/project/pytest-redis/
   summary: Redis fixtures and fixture factories for Pytest.
-  dev_url: https://github.com/ClearcodeHQ/pytest-redis
-  license: LGPL-3.0 AND GPL-3.0
+  dev_url: https://github.com/dbfixtures/pytest-redis
+  license: LGPL-3.0-only AND GPL-3.0-only
   license_file:
-    - COPYING.lesser
     - COPYING
+    - COPYING.lesser
 
 extra:
   recipe-maintainers:
