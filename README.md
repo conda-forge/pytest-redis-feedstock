@@ -3,22 +3,23 @@ About pytest-redis-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-redis-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/ClearcodeHQ/pytest-redis
+Home: https://pypi.org/project/pytest-redis/
 
-Package license: LGPL-3.0 AND GPL-3.0
+Package license: LGPL-3.0-only AND GPL-3.0-only
 
 Summary: Redis fixtures and fixture factories for Pytest.
 
-Development: https://github.com/ClearcodeHQ/pytest-redis
+Development: https://github.com/dbfixtures/pytest-redis
 
 Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17635&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pytest-redis-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/pytest-redis-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/pytest-redis-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -41,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pytest-redis` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install pytest-redis
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install pytest-redis
 ```
 
-It is possible to list all of the versions of `pytest-redis` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add pytest-redis
+# for installing globally
+pixi global install pytest-redis
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `pytest-redis` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search pytest-redis --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search pytest-redis --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search pytest-redis --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -77,6 +120,8 @@ mamba repoquery whoneeds pytest-redis --channel conda-forge
 # List dependencies of `pytest-redis`:
 mamba repoquery depends pytest-redis --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
