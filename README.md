@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-redis-fe
 
 Home: https://pypi.org/project/pytest-redis/
 
-Package license: LGPL-3.0-only AND GPL-3.0-only
+Package license: LGPL-3.0-only
 
 Summary: Redis fixtures and fixture factories for Pytest.
 
