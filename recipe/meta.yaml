@@ -1,13 +1,13 @@
 {% set python_min = "3.10" %}
-{% set version = "5.0.0" %}
+{% set version = "5.0.1" %}
 
 package:
   name: pytest-redis
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/p/pytest-redis/pytest_redis-{{ version }}.tar.gz
-  sha256: 2eb0a1e5b63b34c9afcd117b3b728205fbe8d793706b2e9cb2152e81959da21f
+  url: https://files.pythonhosted.org/packages/source/p/pytest-redis/pytest_redis-{{ version }}.tar.gz
+  sha256: 6436d16158ffd182e688e08c4e06c613590ae9f9849127b048d85ac421043be9
 
 build:
   noarch: python
